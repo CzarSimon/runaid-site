@@ -1,26 +1,257 @@
-@import "tailwindcss";
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-start: #071a3e;
+  --bg-end: #0f2f67;
+  --surface: #f4f7fc;
+  --card: #ffffff;
+  --text: #11203f;
+  --muted: #4b5b7f;
+  --line: #d8e1f0;
+  --accent: #ff7f32;
+  --accent-dark: #d8601a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  background: linear-gradient(160deg, var(--bg-start), var(--bg-end));
+}
+
+a {
+  color: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.hero {
+  color: #f8fbff;
+  padding: 4.5rem 0 3.25rem;
+}
+
+.content-shell {
+  width: min(100% - 2.5rem, 72rem);
+  margin: 0 auto;
+}
+
+.logo {
+  width: 88px;
+  height: 88px;
+  border-radius: 18px;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  color: #9ac0ff;
+  font-size: 0.78rem;
+}
+
+h1 {
+  margin: 0.25rem 0 0;
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
+  line-height: 1.05;
+}
+
+.lead {
+  margin-top: 1rem;
+  max-width: 46rem;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.positioning {
+  margin-top: 0.5rem;
+  color: #b5d0ff;
+  font-weight: 600;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.95rem 1.25rem;
+}
+
+.cta-button:hover,
+.cta-button:focus-visible {
+  background: var(--accent-dark);
+}
+
+.section {
+  background: var(--card);
+  margin: 0;
+  padding: 2.25rem 0;
+}
+
+.section.alt {
+  background: var(--surface);
+}
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 0.85rem;
+  font-size: 1.75rem;
+}
+
+.section ul,
+.section ol {
+  margin: 0;
+  padding-left: 1.15rem;
+  line-height: 1.75;
+  max-width: 65ch;
+}
+
+.waitlist {
+  scroll-margin-top: 2rem;
+}
+
+.waitlist-form {
+  max-width: 30rem;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.input-label {
+  font-weight: 700;
+}
+
+.waitlist-form input[type="email"],
+.waitlist-form input[type="text"] {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.8rem 0.9rem;
+  font-size: 1rem;
+}
+
+.consent-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: var(--muted);
+}
+
+.waitlist-form button {
+  border: 0;
+  border-radius: 12px;
+  background: #102a58;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.85rem 1rem;
+  cursor: pointer;
+}
+
+.waitlist-form button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status-ok {
+  color: #15603e;
+  margin: 0;
+}
+
+.status-error {
+  color: #8e2222;
+  margin: 0;
+}
+
+.honey-label,
+.honey-input {
+  position: absolute;
+  left: -10000px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
+}
+
+.faq-grid article {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.faq-grid h3 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+}
+
+.footer-links {
+  padding-bottom: 2.75rem;
+}
+
+.footer-links .content-shell {
+  display: grid;
+  gap: 1rem;
+}
+
+.footer-links nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-links nav a {
+  color: #133163;
+  font-weight: 600;
+}
+
+.global-footer {
+  background: #071737;
+  color: #afc6f8;
+  padding: 0.75rem 1.25rem 1.4rem;
+  font-size: 0.9rem;
+}
+
+.legal-page {
+  min-height: 100vh;
+  background: #f8fbff;
+  color: #1b2950;
+  padding: 2.4rem 1.25rem;
+  line-height: 1.7;
+}
+
+.legal-page h1 {
+  color: #122857;
+  font-size: 2rem;
+}
+
+@media (min-width: 800px) {
+  .content-shell {
+    width: min(100% - 6rem, 72rem);
+  }
+
+  .footer-links .content-shell {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .legal-page {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }

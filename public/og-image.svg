@@ -1,0 +1,14 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071B42"/>
+      <stop offset="1" stop-color="#103676"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="84" y="175" width="280" height="280" rx="40" fill="#0A2A66"/>
+  <path d="M162 255C162 244.059 170.867 235.192 181.808 235.192H258.811C293.465 235.192 321.558 263.285 321.558 297.939C321.558 332.593 293.465 360.686 258.811 360.686H238.192L206.31 424H171.049L209.706 345.333H258.811C284.032 345.333 304.48 324.885 304.48 299.664C304.48 274.443 284.032 253.995 258.811 253.995H181.808C170.867 253.995 162 262.862 162 273.803V255Z" fill="white"/>
+  <text x="410" y="265" font-size="68" fill="white" font-family="Arial, sans-serif" font-weight="700">Runaid</text>
+  <text x="410" y="340" font-size="36" fill="#C8DCFF" font-family="Arial, sans-serif">AI running companion for Strava users</text>
+  <text x="410" y="395" font-size="30" fill="#DCE9FF" font-family="Arial, sans-serif">Launching soon</text>
+</svg>
