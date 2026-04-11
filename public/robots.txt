@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.runaid.app
+
+# Sitemaps
+Sitemap: https://www.runaid.app/sitemap.xml
