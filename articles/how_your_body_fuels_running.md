@@ -1,0 +1,179 @@
+# How Your Body Fuels Running
+
+*The energy systems inside the cell, from stored ATP to aerobic respiration*
+
+---
+
+The previous articles in this series described the engine from the outside: the [physiological determinants](/articles/physiology-of-running-performance) that govern how fast you can run, and the [lactate curve](/articles/lactate-curve) that maps the intensity spectrum. This article opens the hood. It describes what is actually happening inside your muscle cells when you run — the energy systems that power every stride.
+
+This article is more technical than the others. It covers the biochemistry of energy production in enough detail to give you a genuine understanding of how your body fuels running. You don't need any of this to run fast. But if you want to understand *why* training works at a fundamental level — why easy runs develop your aerobic base, why threshold work shifts the lactate curve, why you hit the wall in a marathon — this is where that understanding lives. If you'd prefer to skip to practical application, [the S&C article](/articles/strength-and-conditioning) is a good next step.
+
+A note before we begin: what follows is our best current understanding of how energy production works at the cellular level. Like all mechanistic biology, it is built from indirect measurements and observation. These are well-supported models — the product of decades of research — but they are models, not engineering blueprints. Where the science is settled, we'll present it with confidence. Where the picture is still developing, we'll say so.
+
+---
+
+## The muscle fibre
+
+When you run, your brain sends electrical signals through motor neurons to muscle fibres — the individual cells that make up your muscles. A muscle fibre is a single cell, long and thin, packed with contractile proteins that slide past each other to produce force. When a fibre is recruited by the nervous system, it contracts. That contraction is what propels you forward.
+
+Every contraction requires energy, and that energy comes in exactly one currency: a molecule called ATP (adenosine triphosphate). When ATP is split into ADP (adenosine diphosphate) and a phosphate group, the energy released drives the contraction. No ATP, no contraction — it's that simple.
+
+The problem is supply. The amount of ATP stored in a muscle fibre at any given moment is tiny — enough for roughly two to three seconds of hard effort. Everything that follows in this article is about how the cell replenishes that supply. It does so through multiple systems operating simultaneously, each with different characteristics: different speeds, different capacities, different fuel sources, and different oxygen requirements.
+
+---
+
+## Immediate energy — Stored ATP and the phosphocreatine system
+
+The cell's first response to a demand for energy is to use what's already available.
+
+A small reserve of ATP sits ready in the muscle, available instantly. No chemical conversion needed — it's there, it's split, and the energy is released. But at the rate a working muscle consumes ATP, this reserve is exhausted within seconds.
+
+The next line of defence is phosphocreatine. The cell maintains a store of phosphocreatine — a molecule that can donate its phosphate group directly to ADP, regenerating ATP almost immediately. This reaction is extremely fast and requires no oxygen. But the phosphocreatine store is limited: enough to sustain maximal effort for roughly 10–15 seconds. It's the system that powers a sprint start, a hard surge in a race, or the first seconds of any effort before the slower systems catch up.
+
+Together, stored ATP and phosphocreatine buy time. They provide energy while the cell's higher-capacity systems — glycolysis and aerobic respiration — ramp up to meet demand.
+
+---
+
+## Glycolysis — Fast energy from glucose
+
+Glycolysis is active in your cells all the time — even at rest. It is the process by which glucose is broken down to produce ATP, and it takes place in the cytoplasm, the fluid that fills the cell outside the mitochondria. It does not require oxygen.
+
+The fuel for glycolysis is glucose, a simple sugar. Your muscles store glucose in a compact form called glycogen — chains of glucose molecules packed together, ready to be broken apart when energy is needed. The liver also stores glycogen and releases glucose into the bloodstream, and additional glucose arrives from dietary carbohydrates. Together these stores are limited — often around 2,000 calories total, though the exact amount varies with body size, training status, and diet — enough for roughly 90 minutes to a couple of hours of hard running if not supplemented during exercise.
+
+Glycolysis breaks each glucose molecule down in a series of steps, yielding a small amount of ATP — 2 molecules from blood glucose, or 3 when the starting material is a glucose unit released from muscle glycogen (which enters the pathway one step further along). Compare that to the 30–32 ATP that full aerobic processing will eventually produce. The yield is modest, but glycolysis has a critical advantage: speed. It can ramp up very quickly when energy demand increases, delivering ATP faster per unit of time than the aerobic system can.
+
+### The end product — a scientific revision worth noting
+
+For most of the history of biochemistry, glycolysis was described as having two possible end products: pyruvate under aerobic conditions, and lactate when oxygen was insufficient. This framing — still found in many textbooks — treats lactate as what happens when things go wrong.
+
+More recent research, led by the work of George Brooks and others, has revised this picture. The enzyme that converts pyruvate to lactate operates at very high activity, with an equilibrium that strongly favours lactate. In resting muscle, lactate outnumbers pyruvate roughly 10 to 1. During hard exercise — under fully aerobic conditions, with no oxygen limitation — this ratio rises to 100:1 or higher. A better modern view is that lactate is produced continuously, including under fully aerobic conditions, and becomes especially important as glycolytic flux rises. The old "pyruvate with oxygen, lactate without oxygen" split is too simplistic.
+
+The practical implications are the same either way: what matters is what happens to lactate next. But the mechanistic understanding has shifted from "lactate is what you get when oxygen runs out" to "lactate is what glycolysis always produces." We present the latter as the current best understanding while noting that this represents an ongoing revision of the traditional model.
+
+### The metabolic balance
+
+At low running intensities, glycolysis ticks along at a modest rate. The lactate it produces is processed aerobically — taken up by mitochondria and oxidised — as fast as it appears. Production and clearance are in balance. Blood lactate stays low.
+
+As intensity rises, glycolysis accelerates. Not because the aerobic system fails, but because of a rate limitation: fat oxidation and aerobic processing, while efficient, are slower per unit of time. When energy demand exceeds what these slower systems can deliver at their current rate, the cell leans more heavily on glycolysis — which can ramp up faster. Lactate production begins to outpace clearance. This is the metabolic shift that becomes visible on the lactate curve.
+
+### Lactate as fuel
+
+Lactate is not a dead end. It is a metabolic intermediate — a molecule the body actively uses.
+
+Lactate produced in the cytoplasm can be oxidised within the same working muscle — converted back to pyruvate and fed into the aerobic pathway. The exact subcellular routing of this process (whether lactate enters the mitochondria directly or is converted to pyruvate in the cytoplasm first) is still debated, but the outcome is the same: lactate serves as fuel for aerobic respiration. Lactate can also be exported from the cell and taken up by neighbouring muscle fibres, where it is oxidised in turn. And it can enter the bloodstream and travel to the liver, where a process called the Cori cycle converts it back to glucose — which is then released into the blood and can return to working muscles.
+
+Lactate is not waste. It is a fuel that happens to also be measurable in the blood, which is why it serves as the marker on the lactate curve discussed in the previous article.
+
+---
+
+## Aerobic respiration — The main engine
+
+The mitochondria are where the bulk of ATP production happens. These are structures within the cell — often described as cellular power plants — and they house the aerobic energy system. Regardless of whether the starting fuel comes from glucose (via lactate or pyruvate from glycolysis) or from fat, the destination is the same: the aerobic machinery inside the mitochondria.
+
+Once inside the mitochondria, the fuel molecule is converted into acetyl-CoA — a common gateway molecule. Both glucose-derived and fat-derived fuels converge here. From acetyl-CoA, the process has two main stages.
+
+First, the Krebs cycle (also called the citric acid cycle). Acetyl-CoA enters the cycle and is progressively broken down, releasing carbon dioxide — the CO₂ you breathe out — and generating electron carriers, molecules that hold energy in a form the next stage can use. The Krebs cycle itself produces only a small amount of ATP directly. Its primary role is to prepare the inputs for what comes next.
+
+Second, the electron transport chain. The electron carriers from the Krebs cycle pass their electrons through a series of protein complexes embedded in the inner membrane of the mitochondria. As the electrons move through the chain, energy is released and used to drive the production of ATP. This final stage is where the oxygen you breathe is consumed — the electrons are ultimately passed to oxygen molecules, which combine with hydrogen to form water. This is the oxygen in VO₂max.
+
+The numbers tell the story. From a single glucose molecule, glycolysis alone yields 2 ATP. Full aerobic processing — glycolysis plus the Krebs cycle plus the electron transport chain — yields roughly 30–32 ATP. The aerobic system is an order of magnitude more productive, but it requires oxygen, functioning mitochondria, and time to ramp up. This is why the immediate and glycolytic systems exist — they bridge the gap while the aerobic engine reaches full capacity.
+
+---
+
+## Fat oxidation — Slow, efficient, vast
+
+Fat is the body's largest energy reserve. Even a lean runner carries tens of thousands of calories of stored fat — far more than the 1,500–2,000 calories of glycogen available in the muscles and liver. Fat is stored both within the muscle fibre itself, available for immediate local use, and under the skin and around organs, from where it must be mobilised and transported via the bloodstream to working muscles.
+
+Long-chain fatty acids are first transported into the mitochondria via a process called the carnitine shuttle, then broken down by beta oxidation — which strips the fatty acid molecules into two-carbon units. These units are converted to acetyl-CoA — the same molecule produced from glucose metabolism — and fed into the Krebs cycle. From there, the pathway is identical: Krebs cycle, electron transport chain, ATP.
+
+The yield is enormous. A single common fatty acid produces roughly 106 ATP molecules — more than three times what a glucose molecule yields through complete aerobic processing. But fat oxidation requires more oxygen per ATP produced, and the process is slower per unit of time than glycolysis.
+
+This is the fundamental trade-off that governs how your body fuels running at different intensities. Fat delivers more energy per molecule but delivers it more slowly and at a higher oxygen cost. At low intensities, where energy demand is modest and oxygen supply is ample, fat oxidation meets most of the need. As intensity rises, fat oxidation cannot keep pace — not because it stops working, but because its rate of ATP delivery has a ceiling. The cell shifts toward greater reliance on glycolysis to meet the rising demand.
+
+This trade-off helps explain the landmarks on the lactate curve, which reflect the shifting balance between lactate production and lactate removal as intensity rises.
+
+### The time dimension
+
+Even at a constant intensity, the fuel mix shifts over time. During a long run, muscle glycogen stores gradually deplete. As glycogen runs low, fat oxidation's relative contribution increases — but fat cannot fully compensate for the lost glycolytic capacity at paces above a certain intensity. The cell cannot produce ATP fast enough from fat alone to sustain the required pace.
+
+This is a significant part of what happens when marathon runners "hit the wall." It is partly a glycogen depletion event: the fuel source that enables faster running is running out, and the remaining fuel source — fat — cannot sustain the same rate of energy delivery. Pace drops, not because the runner lacks willpower, but because the available energy system cannot maintain it. This is also why fuelling during long races — taking on carbohydrates to supplement depleting glycogen — is a genuine performance strategy, not a comfort measure.
+
+---
+
+## Fatigue — What limits hard effort
+
+When you run hard above the second lactate threshold, hydrogen ions accumulate within the muscle cell and its internal pH falls — a state called acidosis. This acidosis is linked mainly to very rapid ATP turnover rather than to lactate production itself. In fact, the conversion of pyruvate to lactate actually consumes a hydrogen ion rather than producing one. Lactate rises alongside the same high-flux metabolic state, serving as both a fuel and a marker of it, but it is not the chemical cause of acidosis — a point that reverses the long-standing "lactic acid causes the burn" narrative.
+
+Acidosis impairs muscular contraction and contributes to the sensation of fatigue during hard effort. This is well-supported, but the full mechanism of exercise-induced fatigue is more complex and still actively researched. Some evidence points to the accumulation of inorganic phosphate — a byproduct of ATP and phosphocreatine breakdown — as an equally significant contributor to impaired force production. Others point to central nervous system factors. The acidosis model describes real, measurable phenomena, but it is likely one contributor among several rather than the single cause.
+
+### Buffering
+
+The body has systems that partially counteract hydrogen ion accumulation. Within the muscle cell, a molecule called carnosine acts as a buffer, absorbing hydrogen ions and slowing the decline in pH. In the blood, bicarbonate serves the same function. Both systems have finite capacity — they delay but do not prevent acidosis under sustained hard effort.
+
+Both are also the basis for legal, evidence-supported supplements. Beta-alanine supplementation increases muscle carnosine stores over time; sodium bicarbonate can be taken before competition to boost blood buffering capacity. The effects on performance are real but modest, and most relevant to hard efforts lasting roughly 1–10 minutes — the range where hydrogen ion accumulation is most likely to be a limiting factor.
+
+---
+
+## The complete picture
+
+The energy systems described in this article do not operate as a sequence — switching from one to the next as intensity rises. They operate simultaneously. At any given running intensity, ATP is being produced through some combination of phosphocreatine breakdown, glycolysis, and aerobic respiration of both fat and glucose. What changes with intensity is the relative contribution of each, and the metabolic consequences of that shift.
+
+At easy paces, aerobic fat oxidation dominates. Glycolysis ticks along quietly. Lactate is produced and cleared in balance. The system is sustainable for hours.
+
+At moderate paces — between the first and second lactate thresholds — glycolysis contributes more. Lactate production increases but is still largely matched by clearance. Fat oxidation continues but provides a smaller share. The effort is sustainable for extended periods but not indefinitely.
+
+At hard paces — above the second threshold — glycolysis is working at high rates. Lactate and hydrogen ions accumulate. Fat oxidation's contribution shrinks further. The effort is time-limited by the rate of byproduct accumulation and, eventually, by glycogen depletion.
+
+This is the picture that connects everything in this article series. The lactate curve is a reflection of the glycolysis/aerobic processing balance. The thresholds mark where that balance shifts visibly. VO₂max is the ceiling on the aerobic system's ability to consume oxygen and produce ATP. Running economy is partly about how efficiently this whole process converts chemical energy into forward motion. Durability is about how well these systems maintain their function under prolonged load.
+
+The physiology of performance, viewed from the outside, is the energy systems of metabolism viewed from the inside. Understanding both completes the picture of why training works — and why different types of training target different parts of this system.
+
+---
+
+*This is the deepest layer of the knowledge stack built across this article series. For the broader framework, start with [How Should We Think About Training?](/articles/how-should-we-think-about-training). For practical application of strength training alongside your running, see [the S&C article](/articles/strength-and-conditioning).*
+
+---
+
+## References and Further Reading
+
+### Glycolysis and Lactate Metabolism
+
+- Rogatzki MJ, Ferguson BS, Goodwin ML, Gladden LB. **Lactate is always the end product of glycolysis.** *Frontiers in Neuroscience.* 2015;9:22. — The paper arguing that lactate, not pyruvate, is the primary end product of glycolysis under all conditions.
+
+- Brooks GA. **The science and translation of lactate shuttle theory.** *Cell Metabolism.* 2018;27(4):757–785. — George Brooks's comprehensive review of the lactate shuttle hypothesis.
+
+- Brooks GA. **Lactate as a fulcrum of metabolism.** *Redox Biology.* 2020;35:101454. — An updated treatment of lactate's central role in metabolism.
+
+### Aerobic Respiration and Mitochondrial Function
+
+- Holloszy JO, Coyle EF. **Adaptations of skeletal muscle to endurance exercise and their metabolic consequences.** *Journal of Applied Physiology.* 1984;56(4):831–838. — How endurance training drives mitochondrial adaptation.
+
+- Hood DA. **Mechanisms of exercise-induced mitochondrial biogenesis in skeletal muscle.** *Applied Physiology, Nutrition, and Metabolism.* 2009;34(3):465–472. — How training stimulates the production of new mitochondria.
+
+### Exercise Metabolism Overview
+
+- Hargreaves M, Spriet LL. **Skeletal muscle energy metabolism during exercise.** *Nature Metabolism.* 2020;2(9):817–828. — A modern, comprehensive review of how the energy systems operate during exercise.
+
+### Substrate Utilisation and Fat Oxidation
+
+- Romijn JA, Coyle EF, Sidossis LS, Gastaldelli A, Horowitz JF, Endert E, Wolfe RR. **Regulation of endogenous fat and carbohydrate metabolism in relation to exercise intensity and duration.** *American Journal of Physiology.* 1993;265(3):E380–E391. — The classic study on how the fuel mix shifts with exercise intensity and duration.
+
+- van Loon LJ, Greenhaff PL, Constantin-Teodosiu D, Saris WH, Wagenmakers AJ. **The effects of increasing exercise intensity on muscle fuel utilisation in humans.** *Journal of Physiology.* 2001;536(1):295–304. — How different fuel sources contribute across the intensity spectrum.
+
+### Fatigue Mechanisms and Acid-Base Balance
+
+- Allen DG, Lamb GD, Westerblad H. **Skeletal muscle fatigue: cellular mechanisms.** *Physiological Reviews.* 2008;88(1):287–332. — A comprehensive review of the multiple mechanisms behind exercise-induced fatigue.
+
+- Westerblad H, Allen DG, Lännergren J. **Muscle fatigue: lactic acid or inorganic phosphate the major cause?** *Physiology.* 2002;17(1):17–21. — The debate between acidosis and phosphate accumulation as fatigue mechanisms.
+
+- Robergs RA, Ghiasvand F, Parker D. **Biochemistry of exercise-induced metabolic acidosis.** *American Journal of Physiology – Regulatory, Integrative and Comparative Physiology.* 2004;287(3):R502–R516. — The paper that challenged the traditional view that lactate production causes acidosis, arguing instead that proton accumulation arises primarily from ATP hydrolysis.
+
+### Buffering and Supplementation
+
+- Hobson RM, Saunders B, Ball G, Harris RC, Sale C. **Effects of β-alanine supplementation on exercise performance: a meta-analysis.** *Amino Acids.* 2012;43(1):25–37. — Meta-analysis of beta-alanine's effects on performance.
+
+- Carr AJ, Hopkins WJ, Gore CJ. **Effects of acute alkalosis and acidosis on performance: a meta-analysis.** *Sports Medicine.* 2011;41(10):801–814. — Evidence on sodium bicarbonate and high-intensity performance.
+
+### Energy System Integration
+
+- Gastin PB. **Energy system interaction and relative contribution during maximal exercise.** *Sports Medicine.* 2001;31(10):725–741. — How the energy systems contribute simultaneously across different intensities and durations.
