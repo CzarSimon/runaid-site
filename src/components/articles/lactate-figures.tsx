@@ -30,7 +30,6 @@ const BASE_PROPS = {
   baselineLactate: 1.8,
   lt1: { intensity: 12.5, lactate: 1.7 },
   lt2: { intensity: 15.5, lactate: 4.0 },
-  xAxisLabel: '',
   yAxisLabel: 'Blood lactate (mmol/L)',
   xAxisPrecision: 1,
   intensityStep: 0.5,
@@ -56,6 +55,8 @@ export function LactateFigure1() {
     <div className="my-8 not-italic">
       <LactateCurveChart
         {...BASE_PROPS}
+        xAxisLabel="Intensity (e.g. pace or power)"
+        showXAxisTicks={false}
         zones={[]}
         labels={{ lt1: 'LT1', lt2: 'LT2' }}
       />
@@ -69,6 +70,7 @@ export function LactateFigure2() {
     <div className="my-8 not-italic">
       <LactateCurveChart
         {...BASE_PROPS}
+        xAxisLabel="Intensity (km/h)"
         vo2max={VO2MAX}
         zones={ZONES}
         labels={{ lt1: 'LT1', lt2: 'LT2', vo2max: 'VO₂max' }}
