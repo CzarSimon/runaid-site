@@ -2,14 +2,38 @@
 
 import { LactateCurveChart } from '@runaid/lactate-curve'
 
+const ZONES = [
+  {
+    startIntensity: 'min' as const,
+    endIntensity: 'lt1' as const,
+    label: 'Easy',
+    color: '#22c55e',
+    opacity: 0.15,
+  },
+  {
+    startIntensity: 'lt1' as const,
+    endIntensity: 'lt2' as const,
+    label: 'Moderate',
+    color: '#f59e0b',
+    opacity: 0.15,
+  },
+  {
+    startIntensity: 'lt2' as const,
+    endIntensity: 'max' as const,
+    label: 'Severe',
+    color: '#ef4444',
+    opacity: 0.15,
+  },
+]
+
 const BASE_PROPS = {
-  baselineLactate: 1.0,
-  lt1: { intensity: 220, lactate: 2.0 },
-  lt2: { intensity: 300, lactate: 4.0 },
-  vo2max: { intensity: 360 },
-  xAxisLabel: 'Intensity',
+  baselineLactate: 1.5,
+  lt1: { intensity: 11, lactate: 1.4 },
+  lt2: { intensity: 15.5, lactate: 4.0 },
+  xAxisLabel: 'Speed (km/h)',
   yAxisLabel: 'Blood lactate (mmol/L)',
-  showXAxisTicks: false,
+  xAxisPrecision: 1,
+  intensityStep: 0.5,
   xAxisCompression: { endIntensity: 'lt1' as const, scale: 0.34 },
   theme: {
     curveColor: '#006972',
@@ -27,7 +51,9 @@ export function LactateFigure1() {
     <div className="my-8 not-italic">
       <LactateCurveChart
         {...BASE_PROPS}
+        zones={ZONES}
         labels={{ lt1: 'LT1', lt2: 'LT2' }}
+        showLegend
       />
     </div>
   )
@@ -39,29 +65,7 @@ export function LactateFigure2() {
     <div className="my-8 not-italic">
       <LactateCurveChart
         {...BASE_PROPS}
-        zones={[
-          {
-            startIntensity: 'min',
-            endIntensity: 'lt1',
-            label: 'Easy',
-            color: '#22c55e',
-            opacity: 0.15,
-          },
-          {
-            startIntensity: 'lt1',
-            endIntensity: 'lt2',
-            label: 'Moderate',
-            color: '#f59e0b',
-            opacity: 0.15,
-          },
-          {
-            startIntensity: 'lt2',
-            endIntensity: 'max',
-            label: 'Severe',
-            color: '#ef4444',
-            opacity: 0.15,
-          },
-        ]}
+        zones={ZONES}
         labels={{ lt1: 'LT1', lt2: 'LT2' }}
         showLegend
       />
@@ -75,12 +79,13 @@ export function LactateFigure3() {
     <div className="my-8 not-italic">
       <LactateCurveChart
         {...BASE_PROPS}
+        zones={ZONES}
         raceMarkers={[
-          { intensity: 250, label: 'Marathon' },
-          { intensity: 295, label: 'Half marathon' },
-          { intensity: 310, label: '10k' },
-          { intensity: 330, label: '5k' },
-          { intensity: 345, label: '3k' },
+          { intensity: 13, label: 'Marathon' },
+          { intensity: 15, label: 'Half marathon' },
+          { intensity: 16, label: '10k' },
+          { intensity: 17.5, label: '5k' },
+          { intensity: 19, label: '3k' },
         ]}
         labels={{ lt1: 'LT1', lt2: 'LT2' }}
         showLegend
