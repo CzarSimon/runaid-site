@@ -34,7 +34,10 @@ const BASE_PROPS = {
   yAxisLabel: 'Blood lactate (mmol/L)',
   xAxisPrecision: 1,
   intensityStep: 0.5,
+  xAxisMax: 18,
   xAxisCompression: { endIntensity: 'lt1' as const, scale: 0.45 },
+  xAxisCompressionNote: 'The X axis is compressed below LT1 for visual clarity',
+  showHeader: false,
   theme: {
     curveColor: '#006972',
     thresholdColor: '#000a1e',
@@ -67,7 +70,6 @@ export function LactateFigure2() {
       <LactateCurveChart
         {...BASE_PROPS}
         vo2max={VO2MAX}
-        xAxisMax={18.5}
         zones={ZONES}
         labels={{ lt1: 'LT1', lt2: 'LT2', vo2max: 'VO₂max' }}
         showLegend
@@ -83,7 +85,6 @@ export function LactateFigure3() {
       <LactateCurveChart
         {...BASE_PROPS}
         vo2max={VO2MAX}
-        xAxisMax={18.5}
         zones={ZONES}
         raceMarkers={[
           { intensity: 14, label: 'Marathon' },
