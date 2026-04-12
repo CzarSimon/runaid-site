@@ -7,15 +7,21 @@ export default function Header() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center flex-shrink-0">
+          <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
             <Image
               src="/logos/runaid_logo_navy_transparent.svg"
               alt="Runaid"
-              width={120}
-              height={36}
+              width={180}
+              height={54}
               priority
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
+            <span
+              className="text-xl font-semibold"
+              style={{ fontFamily: 'var(--font-sans)', color: '#000a1e' }}
+            >
+              Runaid
+            </span>
           </Link>
 
           {/* Desktop nav */}
