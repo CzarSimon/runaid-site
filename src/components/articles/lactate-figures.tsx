@@ -51,9 +51,8 @@ export function LactateFigure1() {
     <div className="my-8 not-italic">
       <LactateCurveChart
         {...BASE_PROPS}
-        zones={ZONES}
+        zones={[]}
         labels={{ lt1: 'LT1', lt2: 'LT2' }}
-        showLegend
       />
     </div>
   )
