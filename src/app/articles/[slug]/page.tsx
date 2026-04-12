@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { getAllArticleSlugs, getArticleBySlug, getNextArticle } from '@/lib/articles'
+import { LactateFigure1, LactateFigure2, LactateFigure3 } from '@/components/articles/lactate-figures'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -39,6 +40,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 const mdxComponents = {
+  LactateFigure1,
+  LactateFigure2,
+  LactateFigure3,
   a: ({ href, children, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
     if (href?.startsWith('/')) {
       return (
