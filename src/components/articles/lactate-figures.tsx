@@ -28,13 +28,13 @@ const ZONES = [
 
 const BASE_PROPS = {
   baselineLactate: 1.5,
-  lt1: { intensity: 11, lactate: 1.4 },
+  lt1: { intensity: 12.5, lactate: 1.4 },
   lt2: { intensity: 15.5, lactate: 4.0 },
   xAxisLabel: 'Speed (km/h)',
   yAxisLabel: 'Blood lactate (mmol/L)',
   xAxisPrecision: 1,
   intensityStep: 0.5,
-  xAxisCompression: { endIntensity: 'lt1' as const, scale: 0.34 },
+  xAxisCompression: { endIntensity: 'lt1' as const, scale: 0.5 },
   theme: {
     curveColor: '#006972',
     thresholdColor: '#000a1e',
@@ -45,7 +45,9 @@ const BASE_PROPS = {
   },
 }
 
-/** Figure 1: The basic lactate curve with LT1 and LT2 annotated. */
+const VO2MAX = { intensity: 20 }
+
+/** Figure 1: The basic lactate curve with LT1 and LT2 annotated. No zones, no VO2max. */
 export function LactateFigure1() {
   return (
     <div className="my-8 not-italic">
@@ -64,8 +66,9 @@ export function LactateFigure2() {
     <div className="my-8 not-italic">
       <LactateCurveChart
         {...BASE_PROPS}
+        vo2max={VO2MAX}
         zones={ZONES}
-        labels={{ lt1: 'LT1', lt2: 'LT2' }}
+        labels={{ lt1: 'LT1', lt2: 'LT2', vo2max: 'VO₂max' }}
         showLegend
       />
     </div>
@@ -78,6 +81,7 @@ export function LactateFigure3() {
     <div className="my-8 not-italic">
       <LactateCurveChart
         {...BASE_PROPS}
+        vo2max={VO2MAX}
         zones={ZONES}
         raceMarkers={[
           { intensity: 13, label: 'Marathon' },
@@ -86,7 +90,7 @@ export function LactateFigure3() {
           { intensity: 17.5, label: '5k' },
           { intensity: 19, label: '3k' },
         ]}
-        labels={{ lt1: 'LT1', lt2: 'LT2' }}
+        labels={{ lt1: 'LT1', lt2: 'LT2', vo2max: 'VO₂max' }}
         showLegend
       />
     </div>
