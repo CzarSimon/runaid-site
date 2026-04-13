@@ -109,7 +109,70 @@ export default function AboutPage() {
             Trust is built not by claiming certainty but by being honest about the basis
             for every recommendation. That is how Runaid coaches.
           </p>
-        </div>
+
+          <h2
+            className="text-2xl font-bold mt-10 mb-4"
+            style={{ fontFamily: 'var(--font-serif)' }}
+          >
+            Who built this
+          </h2>
+          <p>
+            Runaid is built by Simon Lindgren — a CTO and product leader by profession, a
+            self-coached runner by obsession.
+          </p>
+          <p>
+            The professional background matters for how the product works: a decade
+            building digital products at startups and scaleups in Stockholm, several years
+            integrating AI into clinical decision-making in the med-tech space, and enough
+            time spent working alongside doctors and physiologists to develop a genuine
+            understanding of the science beneath the coaching.
+          </p>
+          <p>
+            The running background matters for why the product exists. Simon started
+            running in late 2022 with a 56-minute 10k. Three and a half years later:
+            16:56 for 5k, 34:53 for 10k, 1:18:13 for the half marathon, 2:55:35 for the
+            marathon. All self-coached. All while working a demanding full-time job and
+            raising a young family. No training camps, no professional support team, no
+            life structured around running. Just structured, consistent training informed
+            by a deep engagement with the physiology and coaching traditions that
+            Runaid&apos;s articles describe.
+          </p>
+          <p>
+            That progression is not elite. But it is the product of exactly the process
+            Runaid is built to deliver: study the science, understand the coaching
+            traditions, apply them to the specific individual, adapt based on what
+            actually happens, and sustain the work over years. Runaid exists because that
+            process — the reading, the reasoning, the integration of evidence and
+            experience — should not require years of self-education. It should be
+            accessible to any serious runner willing to train with intent.
+          </p>
+          <p>
+            Simon is not a certified coach. Runaid does not rest its credibility on
+            coaching credentials. It rests on the quality of the coaching philosophy, the
+            depth of the physiological reasoning, and — ultimately — whether the product
+            delivers results for the athletes who use it. The articles on this site lay
+            out the thinking in full. The product is the test of whether that thinking
+            translates into practice.
+          </p>
+          <p className="flex gap-4 text-base" style={{ fontFamily: 'var(--font-sans)' }}>
+            <a
+              href="https://www.strava.com/athletes/106875673"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-secondary underline decoration-secondary/40 hover:decoration-secondary transition-colors"
+            >
+              Strava
+            </a>
+            <a
+              href="https://www.linkedin.com/in/simon-lindgren-269102a4/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-secondary underline decoration-secondary/40 hover:decoration-secondary transition-colors"
+            >
+              LinkedIn
+            </a>
+          </p>
+        </div>{/* end prose */}
 
         {/* Waitlist */}
         <div className="mt-16 pt-12 border-t border-border">
