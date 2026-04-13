@@ -1,6 +1,30 @@
 'use client'
 
+import { useEffect, useRef, useState } from 'react'
 import { LactateCurveChart } from '@runaid/lactate-curve'
+
+/** Maintains a fixed aspect ratio for the chart as container width changes. */
+function useContainerHeight(aspectRatio: number) {
+  const ref = useRef<HTMLDivElement>(null)
+  const [height, setHeight] = useState<number | undefined>(undefined)
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+
+    const observer = new ResizeObserver(([entry]) => {
+      setHeight(entry.contentRect.width * aspectRatio)
+    })
+
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [aspectRatio])
+
+  return { ref, height }
+}
+
+// Width:height = 2:1
+const ASPECT_RATIO = 0.5
 
 const ZONES = [
   {
@@ -51,10 +75,12 @@ const VO2MAX = { intensity: 17.5 }
 
 /** Figure 1: The basic lactate curve with LT1 and LT2 annotated. No zones, no VO2max. */
 export function LactateFigure1() {
+  const { ref, height } = useContainerHeight(ASPECT_RATIO)
   return (
-    <div className="my-8 not-italic">
+    <div ref={ref} className="my-8 not-italic">
       <LactateCurveChart
         {...BASE_PROPS}
+        height={height}
         xAxisLabel="Intensity (e.g. pace or power)"
         showXAxisTicks={false}
         zones={[]}
@@ -66,10 +92,12 @@ export function LactateFigure1() {
 
 /** Figure 2: The three intensity domains — Easy, Moderate, Severe. */
 export function LactateFigure2() {
+  const { ref, height } = useContainerHeight(ASPECT_RATIO)
   return (
-    <div className="my-8 not-italic">
+    <div ref={ref} className="my-8 not-italic">
       <LactateCurveChart
         {...BASE_PROPS}
+        height={height}
         xAxisLabel="Intensity (km/h)"
         vo2max={VO2MAX}
         zones={ZONES}
@@ -82,10 +110,13 @@ export function LactateFigure2() {
 
 /** Figure 3: Race distances mapped onto the curve. */
 export function LactateFigure3() {
+  const { ref, height } = useContainerHeight(ASPECT_RATIO)
   return (
-    <div className="my-8 not-italic">
+    <div ref={ref} className="my-8 not-italic">
       <LactateCurveChart
         {...BASE_PROPS}
+        height={height}
+        xAxisLabel="Intensity (km/h)"
         vo2max={VO2MAX}
         zones={ZONES}
         raceMarkers={[
